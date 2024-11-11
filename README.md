@@ -1,0 +1,2 @@
+# netgraph.go
+Network meter
