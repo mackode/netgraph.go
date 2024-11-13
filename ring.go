@@ -29,7 +29,7 @@ func (d *Dpoints) Add(up, down float64) {
 }
 
 func (d Dpoints) All() ([]time.Time, []float64, []float64) {
-  ups, downs := []float64, []float64{}
+  ups, downs := []float64{}, []float64{}
   times := []time.Time{}
   r := d.rp
   n := 0

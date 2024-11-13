@@ -47,6 +47,7 @@ func fetchUpDown() (float64, float64, error) {
   if err != nil {
     return 0, 0, err
   }
+  up := gjson.Get(json, "rsp.troughput.upload.bps").Float()
   down := gjson.Get(json, "rsp.troughput.download.bps").Float()
   return down / 1000, up / 1000, nil
 }

@@ -27,7 +27,7 @@ func main() {
         case "Q":
           os.Exit(0)
       }
-    }
+    },
   )
 
   go func() {
